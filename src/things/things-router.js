@@ -46,7 +46,7 @@ async function checkThingExists(req, res, next) {
 
     if (!thing)
       return res.status(404).json({
-        error: `Thing doesn't exist`
+        error: `thing doesn't exist`
       })
 
     res.thing = thing
